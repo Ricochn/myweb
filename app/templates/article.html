@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+
+{%block title%}Rico's Blog{%endblock%}
+
+{% block page_content %}
+
+    <div class="page-header">
+        <h1>详情</h1>
+    </div>
+    {{article.article|safe}}
+
+{% endblock %}

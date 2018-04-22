@@ -1,0 +1,52 @@
+{%extends "base.html"%}
+
+{%block title%}Rico's site{%endblock%}
+
+{% block content %}
+<div id="me_container">
+    <div id="me_img" >
+        <img src="{{url_for('static', filename='BikeAndMe.jpg')}}" width="300px" height="400px"><br>
+        <a href="http://www.google.cn/maps/@39.0656016,117.1378801,983m/data=!3m1!1e3" target="_blank">2016夏/明理湖畔</a>
+    </div>
+    <div id="me_aboutme">
+        <ul>
+            <li>
+                <img class="me_arrow" src="{{url_for('static',filename='arrow.PNG')}}"><h4 class="me_h">import 学历</h4>
+                <ul>
+                    <li>
+                        ...毕业院校：天津理工大学
+                    </li>
+                    <li>
+                        ...学历：本科
+                    </li>
+                    <li>
+                        ...专业：信息安全
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img class="me_arrow" src="{{url_for('static',filename='arrow.PNG')}}"><h4 class="me_h">import 技能/项目</h4>
+                <ul>
+                    <li>...语言：Python,Java,C,C#,Assembly(熟练程度DESC排序)</li>
+                    <li>...框架：熟悉flask,了解.NET,Android</li>
+                    <li>...安全：熟悉缓冲区溢出,常见WEB攻击渗透手段,其他网络攻击手段原理</li>
+                    <li>...参与项目：“大学生创新创业”项目/Android分析工具（详见<a href="https://github.com/Ricochn/AndroidXMLAnalyse">
+                        Github</a>）</li>
+                </ul>
+            </li>
+            <li>
+                <img class="me_arrow" src="{{url_for('static',filename='arrow.PNG')}}"><h4 class="me_h">import 实习经历</h4>
+                <ul>
+                    <li>...实训：南京壹进制公司/多数据库安全操作</li>
+                </ul>
+            </li>
+            <li>
+                <img class="me_arrow" src="{{url_for('static',filename='arrow.PNG')}}"><h4 class="me_h">import 其他</h4>
+                <ul>
+                    <li>...爱好：读书,瞎溜达 :)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
